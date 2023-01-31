@@ -43,7 +43,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         alert.popoverPresentationController?.sourceRect = pickerViewButton.bounds
         
         alert.setValue(vc, forKey: "ContentViewController")
-        alert.addAction(UIAlertAction(title: "Select", style: .cancel, handler: { (UIAlertAction) in }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (UIAlertAction) in }))
         alert.addAction(UIAlertAction(title: "Select", style: .default, handler: { (UIAlertAction) in
             self.selectedRow = pickerView.selectedRow(inComponent: 0)
             let selected = Array(self.backGroundColours)[self.selectedRow]
